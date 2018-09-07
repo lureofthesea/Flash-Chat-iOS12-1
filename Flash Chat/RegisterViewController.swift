@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FirebaseAuth
+import Firebase
 
 class RegisterViewController: UIViewController {
 
@@ -25,11 +25,9 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-
   
     @IBAction func registerPressed(_ sender: AnyObject) {
         
-
         
         //TODO: Set up a new user on our Firbase database
         Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
@@ -40,9 +38,6 @@ class RegisterViewController: UIViewController {
                 self.performSegue(withIdentifier: "goToChat", sender: self)
             }
         }
-    
-
-        
         
     } 
     
