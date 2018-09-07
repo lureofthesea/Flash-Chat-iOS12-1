@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 
-
 class ChatViewController: UIViewController {
     
     // Declare instance variables here
