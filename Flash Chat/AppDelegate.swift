@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        let myDatabase = Database.database().reference()
-        myDatabase.setValue("We've got data!")
+//        let myDatabase = Database.database().reference()
+//        myDatabase.setValue("We've got data!")   // overrides all other DB values
         
         return true
     }
